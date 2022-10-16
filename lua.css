@@ -1,0 +1,139 @@
+/* CODIGO DO LUA E NUVENS ANIMADO */
+html,
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --font-1: 'Cookie', cursive;
+    --font-2: 'Oswald', sans-serif;
+    --font-3: 'Ranchers', cursive;
+    --font-4: 'Rowdies', cursive;
+}
+:before, 
+:after{
+    content:'';
+    position:absolute;
+}
+canvas{
+    position:absolute;
+    top:25%;
+    left:0;
+}
+/* CODIGO DAS NUVENS ANIMADAS*/
+.jd__cloud1{
+    width:300px;
+    top:300px;
+    left:10%;
+    transform:translateX(-500%);
+    animation:move 40s linear infinite;
+}
+.jd__cloud2{
+    width:350px;
+    top:300px;
+    left:0;
+    transform:translateX(-400%);
+    animation:move 30s linear infinite;
+}
+.jd__cloud3{
+    width:300px;
+    top:300px;
+    left:10%;
+    transform:translateX(-500%);
+    animation:move 25s linear infinite;
+}
+.jd__cloud4{
+    width:350px;
+    top:300px;
+    left:0;
+    transform:translateX(-500%);
+    animation:move 50s linear infinite;
+}
+.jd__cloud5{
+    width:350px;
+    top:300px;
+    left:0;
+    transform:translateX(-500%);
+    animation:move 25s linear infinite;
+}
+.jd__cloud6{
+    width:350px;
+    top:300px;
+    left:0;
+    transform:translateX(-500%);
+    animation:move 35s linear infinite;
+}
+@keyframes move{
+    0%{
+        transform:translateX(-100%) scale(1);
+    }
+    0%{
+        transform:translateX(calc(100vw + 100%)) scale(1.2);
+    }
+}
+/* CODIGO DA LUA ANIMADO*/
+:before,
+:after{
+    content:'';
+    position: relative;
+}
+.jd__moon{
+    width:384px;
+    height:384px;
+    position: absolute;
+    border-radius:50%;
+    background:#D9E2E5;
+    left:200px;
+    top:200px;
+    box-shadow:0 0 80px 20px #D9E2E5;
+    animation:moon_pulse 2s ease-in-out infinite;
+}
+@keyframes moon_pulse{
+    0%{
+        box-shadow:0 0 80px 50px #D9E2E5;
+    }
+    50%{
+        box-shadow:0 0 80px 20px #d9e2e5;
+    }
+    100%{
+        box-shadow:0 0 80px 50px #D9E2E5;
+    }
+}
+.jd__moon:before,
+.jd__moon:after{
+    background:rgba(0,0,0,.2);
+    border-radius:50%;
+}
+.jd__moon:before{
+    width:57px;
+    height:61px;
+    top:40px;
+    right:70px;
+}
+.jd__moon:after{
+    width:16px;
+    height:20px;
+    top:100px;
+    right:65px;
+    box-shadow:-80px 20px rgba(0,0,0,.2);
+}
+/* CODIGO DENTRO DA LUA */
+:before, 
+:after{
+    content:'';
+    position:absolute;
+}
+canvas{
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+.jd__scene,
+.jd__wave{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    left:100px;
+    bottom: -10%;
+}

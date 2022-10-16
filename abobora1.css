@@ -1,0 +1,135 @@
+/* CONTEM ABOBORA 1 */
+.container1{
+    margin-top: 150px;
+    position: absolute;
+    display: flex;
+	bottom: 40px;
+	left: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pumpkin1{
+    height: 11em;
+    width: 15em;
+    background: #f68632;
+    border: 0.4em solid #a14907;
+    border-radius: 70%/110%;
+    position: relative;
+    box-shadow: inset 0 0px 20px #a14907, 0 0 30px -4px red;
+    z-index: 1;
+    animation: float1 3s infinite;
+}
+.pumpkin1 .texture1{
+    height: 10.8em;
+    width: 6.5em;
+    position: absolute;
+    bottom: -0.4em;
+    left: 4em;
+    border-radius: 70%/130%;
+    border-bottom: 0.5em solid #a14907;
+}
+.pumpkin1 .texture1:after{
+    content: "";
+    display: block;
+    height: 9.9em;
+    width: 11em;
+    position: absolute;
+    bottom: -0.4em;
+    left: -2.5em;
+    border-radius: 70%/130%;
+    border-bottom: 0.5em solid #a14907;
+    border-top: 0.5em solid #a14907;
+}
+.pumpkin1 .root1{
+    background: #517f54;
+    height: 2.8em;
+    width: 1.25em;
+    position: absolute;
+    left: calc(7.5em - 0.625em);
+    top: -2.7em;
+    transform: rotate(5deg);
+    border-radius: 30% 20% 70% 10%;
+    z-index: 1;
+    box-shadow:  inset 0 0px 10px #29412b;
+}
+.pumpkin1  .eye-left1{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+    top: 2.8em;
+    left: 3.7em;
+    transform: rotate(-30deg);
+    border-bottom: 2.1em solid transparent;
+    border-right:  2.4em solid #401d03;
+}
+.pumpkin1  .eye-right1{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+    top: 2.8em;
+    right: 3.7em;
+    transform: rotate(30deg);
+    border-bottom: 2.1em solid transparent;
+    border-left:  2.4em solid #401d03;
+}
+.pumpkin1 .mouth-left1{
+    width: 4em;
+    height: 2em;
+    position: absolute;
+    bottom: 1.5em;
+    border-bottom: 1em solid #401d03;
+    left: 3.6em;
+    border-radius: 0 0 0 100%;
+}
+.pumpkin1 .mouth-right1{
+    width: 4em;
+    height: 2em;
+    position: absolute;
+    bottom: 1.5em;
+    border-bottom: 1em solid #401d03;
+    right: 3.4em;
+    border-radius: 0 0 100% 0;
+}
+.pumpkin1 .teeth1{
+    width: 0.5em;
+    height: 1em;
+    position: absolute;
+    top: 7em;
+    left: 7em;
+    border-top: 0.8em solid transparent;
+    border-bottom: 0em solid transparent;
+    border-left: 0.8em solid #401d03;
+}
+.pumpkin1 .teeth1:before, .pumpkin1 .teeth1:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+}
+.pumpkin1 .teeth1:before{
+    right: 1.7em;
+    top: -0.8em;
+    transform: rotate(30deg);
+    border-bottom: 0.5em solid transparent;
+    border-left: 1em solid #401d03;
+}
+.pumpkin1 .teeth1:after{
+    left: 1em;
+    top: -0.7em;
+    transform: rotate(30deg);
+    border-bottom: 0.5em solid transparent;
+    border-left: 1em solid #401d03;
+}
+@keyframes float1{
+    0% , 100%{
+        transform: rotateX(0);
+	}
+    50%{
+        transform: rotateX(15deg);
+    }
+}

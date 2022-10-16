@@ -1,0 +1,21 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.cenario{
+    margin-top: 150px;
+    position: absolute;
+    display: flex;
+	bottom: 40px;
+	left: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px;
+}
+.arvo{
+    width: 100px;
+    height: 100px;
+}

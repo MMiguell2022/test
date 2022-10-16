@@ -1,0 +1,112 @@
+body{
+  /*background-color: #ed7423;*/
+  min-height:100vh;
+  overflow:hidden;
+  margin: 0px;
+  padding: 0px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.snow {
+    top: 20px;
+    left: 90px;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.76);
+    border-radius: 50%;
+  }
+  .snow1 {
+    top: 150px;
+    left: -30px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.815);
+    border-radius: 50%;
+  }
+  .snow2 {
+    top: 320px;
+    left: -70px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  .snow3 {
+    top: 90px;
+    left: 100px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  .snow4 {
+    top: 200px;
+    left: 150px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  .snow5 {
+    top: 20px;
+    left: 400px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.815);
+    border-radius: 50%;
+  }
+  .snow6 {
+    top: 20px;
+    left: 90px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  .snow7 {
+    top: 220px;
+    left: 90px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  .snow8 {
+    top: 20px;
+    left: 90px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  .snow9 {
+    top: 20px;
+    left: 90px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  .snow10 {
+    top: 20px;
+    left: 90px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  
