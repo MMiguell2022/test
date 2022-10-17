@@ -27,8 +27,8 @@
     margin-top: 150px;
     position: absolute;
     display: flex;
-	bottom: 40px;
-	left: 130px;
+    bottom: 40px;
+    left: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
