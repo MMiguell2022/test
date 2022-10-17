@@ -3,8 +3,8 @@
     margin-top: 150px;
     position: absolute;
     display: flex;
-	bottom: 40px;
-	left: 400px;
+    bottom: 60px;
+    right: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
