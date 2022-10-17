@@ -11,25 +11,12 @@
         <link rel="stylesheet" href="bruxa.css">
         <link rel="stylesheet" href="lua.css">
         <link rel="stylesheet" href="neve.css">
-        <link rel="stylesheet" href="cenario.css">
+        <link rel="stylesheet" href="aranha.css">
         <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
     </head>
   <body>
 <!-- lua -->
     <div class="jd__moon"></div>
-<!-- ARANHA -->
-  <div class='spider_4'>
-    <div class='eye left'></div>
-    <div class='eye right'></div>
-    <span class='leg left'></span>
-    <span class='leg left'></span>
-    <span class='leg left'></span>
-    <span class='leg left'></span>
-    <span class='leg right'></span>
-    <span class='leg right'></span>
-    <span class='leg right'></span>
-    <span class='leg right'></span>
-</div> 
  <!-- nuvem -->
 	<body>
         <div class="jd__scene">
@@ -249,6 +236,19 @@
     <img src="https://xatimg.com/image/ciObAAz9DJiW.png" class="ghost1">
     <img src="https://xatimg.com/image/thjq2tqlleRQ.png" class="ghost2">
 </section> 
+<!-- ARANHA -->
+  <div class='spider_4'>
+    <div class='eye left'></div>
+    <div class='eye right'></div>
+    <span class='leg left'></span>
+    <span class='leg left'></span>
+    <span class='leg left'></span>
+    <span class='leg left'></span>
+    <span class='leg right'></span>
+    <span class='leg right'></span>
+    <span class='leg right'></span>
+    <span class='leg right'></span>
+</div> 
 <!-- abobora -->
     <div class="pt">
     <h3>Happy Halloween</h3>       
@@ -275,232 +275,6 @@
             <div class="teeth1"></div>
         </div>
     </div> 
-<!-- ARANHA ANIMAÇAO-->
-<style>
-    [class*="spider"] {
-     position: absolute;
-     height: 40px;
-     width: 50px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     margin: 40px 0 0 0;
-     background: #030202;
-   }
-   [class*="spider"] *, [class*="spider"]:before, [class*="spider"]:after, [class*="spider"] :after, [class*="spider"] :before {
-     position: absolute;
-     content: "";
-   }
-   [class*="spider"]:before {
-     width: 1px;
-     background: #ffffff;
-     right: 25px;
-     top: -250px;
-     height: 250px;
-   }
-   [class*="spider"] .eye {
-     top: 16px;
-     height: 14px;
-     width: 12px;
-     background: #ffffff;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-   }
-   [class*="spider"] .eye:after {
-     top: 6px;
-     height: 5px;
-     width: 5px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     background: black;
-     animation: look 8s infinite;
-   }
-   @keyframes look {
-       0%, 40%, 100% {
-           transform: translateX(0); 
-       }
-   
-       45%, 95% {
-           transform: translateX(-50%);
-       }
-   }
-   [class*="spider"] .eye.left {
-     left: 14px;
-   }
-   [class*="spider"] .eye.left:after {
-     right: 3px;
-   }
-   [class*="spider"] .eye.right {
-     right: 14px;
-   }
-   [class*="spider"] .eye.right:after {
-     left: 3px;
-   }
-   [class*="spider"] .leg {
-     top: 6px;
-     height: 12px;
-     width: 14px;
-     border-top: 2px solid #000000;
-     border-left: 1px solid transparent;
-     border-right: 1px solid transparent;
-     border-bottom: 1px solid transparent;
-     z-index: -1;
-   }
-   [class*="spider"] .leg.left {
-     left: -8px;
-     -moz-transform-origin: top right;
-     -ms-transform-origin: top right;
-     -webkit-transform-origin: top right;
-     transform-origin: top right;
-     -moz-transform: rotate(36deg) skewX(-20deg);
-     -ms-transform: rotate(36deg) skewX(-20deg);
-     -webkit-transform: rotate(36deg) skewX(-20deg);
-     transform: rotate(36deg) skewX(-20deg);
-     border-left: 2px solid #000000;
-     -moz-border-radius: 60% 0 0 0;
-     -webkit-border-radius: 60%;
-     border-radius: 60% 0 0 0;
-     -moz-animation: legs-wriggle-left 1s 0s infinite;
-     -webkit-animation: legs-wriggle-left 1s 0s infinite;
-     animation: legs-wriggle-left 1s 0s infinite;
-   }
-   [class*="spider"] .leg.right {
-     right: -8px;
-     -moz-transform-origin: top left;
-     -ms-transform-origin: top left;
-     -webkit-transform-origin: top left;
-     transform-origin: top left;
-     -moz-transform: rotate(-36deg) skewX(20deg);
-     -ms-transform: rotate(-36deg) skewX(20deg);
-     -webkit-transform: rotate(-36deg) skewX(20deg);
-     transform: rotate(-36deg) skewX(20deg);
-     border-right: 2px solid #000000;
-     -moz-border-radius: 0 60% 0 0;
-     -webkit-border-radius: 0;
-     border-radius: 0 60% 0 0;
-     -moz-animation: legs-wriggle-right 1s 0.2s infinite;
-     -webkit-animation: legs-wriggle-right 1s 0.2s infinite;
-     animation: legs-wriggle-right 1s 0.2s infinite;
-   }
-   [class*="spider"] .leg:nth-of-type(2) {
-     top: 14px;
-     left: -11px;
-     -moz-animation: legs-wriggle-left 1s 0.8s infinite;
-     -webkit-animation: legs-wriggle-left 1s 0.8s infinite;
-     animation: legs-wriggle-left 1s 0.8s infinite;
-   }
-   [class*="spider"] .leg:nth-of-type(3) {
-     top: 22px;
-     left: -12px;
-     -moz-animation: legs-wriggle-left 1s 0.2s infinite;
-     -webkit-animation: legs-wriggle-left 1s 0.2s infinite;
-     animation: legs-wriggle-left 1s 0.2s infinite;
-   }
-   [class*="spider"] .leg:nth-of-type(4) {
-     top: 31px;
-     left: -10px;
-     -moz-animation: legs-wriggle-left 1s 0.4s infinite;
-     -webkit-animation: legs-wriggle-left 1s 0.4s infinite;
-     animation: legs-wriggle-left 1s 0.4s infinite;
-   }
-   [class*="spider"] .leg:nth-of-type(6) {
-     top: 14px;
-     right: -11px;
-     -moz-animation: legs-wriggle-right 1s 0.4s infinite;
-     -webkit-animation: legs-wriggle-right 1s 0.4s infinite;
-     animation: legs-wriggle-right 1s 0.4s infinite;
-   }
-   [class*="spider"] .leg:nth-of-type(7) {
-     top: 22px;
-     right: -12px;
-     -moz-animation: legs-wriggle-right 1s 0.7s infinite;
-     -webkit-animation: legs-wriggle-right 1s 0.7s infinite;
-     animation: legs-wriggle-right 1s 0.7s infinite;
-   }
-   [class*="spider"] .leg:nth-of-type(8) {
-     top: 31px;
-     right: -10px;
-     -moz-animation: legs-wriggle-right 1s 0.3s infinite;
-     -webkit-animation: legs-wriggle-right 1s 0.3s infinite;
-     animation: legs-wriggle-right 1s 0.3s infinite;
-   }
-   
-   .spider_4 {
-     top: -100px;
-     right: 15%;
-     margin-top: 50px;
-     -moz-animation: spider-move-4 5s infinite;
-     -webkit-animation: spider-move-4 5s infinite;
-     animation: spider-move-4 5s infinite;
-   }
-   
-   @keyframes legs-wriggle-left {
-     0%, 100% {
-       -webkit-transform: rotate(36deg) skewX(-20deg);
-       transform: rotate(36deg) skewX(-20deg);
-     }
-     25%, 75% {
-       -webkit-transform: rotate(15deg) skewX(-20deg);
-       transform: rotate(15deg) skewX(-20deg);
-     }
-     50% {
-       -webkit-transform: rotate(45deg) skewX(-20deg);
-       transform: rotate(45deg) skewX(-20deg);
-     }
-   }
-   @keyframes legs-wriggle-right {
-     0%, 100% {
-       -webkit-transform: rotate(-36deg) skewX(20deg);
-       transform: rotate(-36deg) skewX(20deg);
-     }
-     25%, 75% {
-       -webkit-transform: rotate(-15deg) skewX(20deg);
-       transform: rotate(-15deg) skewX(20deg);
-     }
-     50% {
-       -webkit-transform: rotate(-45deg) skewX(20deg);
-       transform: rotate(-45deg) skewX(20deg);
-     }
-   }
-   @-moz-keyframes spider-move-4 {
-     0%, 100% {
-       margin-top: 222px;
-     }
-     46% {
-       margin-top: calc(222px + 36px);
-     }
-   }
-   @-webkit-keyframes spider-move-4 {
-     0%, 100% {
-       margin-top: 222px;
-     }
-     46% {
-       margin-top: calc(222px + 36px);
-     }
-   }
-   @keyframes spider-move-4 {
-     0%, 100% {
-       margin-top: 270px;
-     }
-     46% {
-       margin-top: calc(300px + 36px);
-     }
-   } 
-	
-@keyframes flicker {
-  0%    { opacity: 1; }
-  4%    { opacity: 0.1; }
-  6%    { opacity: 1; }
-  7%    { opacity: 0.1; }
-  9%    { opacity: 1; }
-  9%    { opacity: 0.1; }
-  10%   { opacity: 1; }
-  98%   { opacity: 1; }
-  100%  { opacity: 1; }
-} 
-</style>
 <canvas></canvas> 
  </body>
 </html> 
